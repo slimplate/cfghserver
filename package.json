@@ -4,9 +4,13 @@
   "devDependencies": {
     "wrangler": "2.8.0"
   },
+  "module": true,
   "private": true,
   "scripts": {
     "start": "wrangler dev",
     "deploy": "wrangler publish"
+  },
+  "dependencies": {
+    "itty-router": "^3.0.11"
   }
 }
