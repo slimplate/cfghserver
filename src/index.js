@@ -10,7 +10,8 @@ router.all('*', () => new Response('Nothing to see here.'))
 
 export default {
   async fetch (request, env, ctx) {
-    const req = { ...request, env, ctx, req: request }
-    return router.handle(req)
+    request.env = env
+    request.ctx = ctx
+    return router.handle(request)
   }
 }
