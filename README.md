@@ -34,4 +34,4 @@ You can see example of using this for Github login [here](https://github.com/sli
 
 I am using ideas from [here](https://www.npmjs.com/package/@isomorphic-git/cors-proxy).
 
-Essentially, you can use [isomorphic-git](https://github.com/isomorphic-git/isomorphic-git) and auth with Github, in the browser.
+In your app, use URLs like `https://cfghserver.YOURNAME.workers.dev/api/cors/github.com/slimplate/private-tester.git/info/refs`
