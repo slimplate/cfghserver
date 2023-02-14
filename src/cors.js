@@ -41,7 +41,7 @@ export default function (router) {
     request.headers.set('Origin', apiUrl.origin)
     request.headers.set('Referer', apiUrl.toString())
     request.headers.set('Host', apiUrl.hostname)
-    let response = await fetch(apiUrl, request)
+    let response = await fetch(request)
     response = new Response(response.body, response)
 
     if (response.headers.has('Location')) {
